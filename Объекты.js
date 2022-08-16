@@ -30,7 +30,7 @@ function multiplyNumeric(obj) {
 
 
 
-const whois = prompt('Кто пришел?', 'Админ');
+/*const whois = prompt('Кто пришел?', 'Админ');
 if (whois === 'Админ'){
     const password = prompt('Пароль?');
 
@@ -45,15 +45,54 @@ if (whois === 'Админ'){
     alert('Вход отменен');
 } else {
     alert('Ты кто такой, давай до свидания!');
+}*/
+
+
+/*
+const test = true;
+if (test !== true){
+    alert('Верно');
+} else {
+    alert('Неверно')
 }
 
 
+const result = test !== true ? 'Верно' : 'Неверно';
+alert(result);
+*/
 
 
-
-
-
-
+let num = 0;
+const start = confirm('Сыграем?');
+if (start === true){
+    const go = confirm('За каждый правильный ответ начисляется 1 балл');
+    if (go === true){
+        const ques1 = prompt('What is your name?') ;
+        if (ques1 === 'Alymbek'){
+            alert('its right + 1ball')
+            num++;
+        } else{
+            alert('incorrect')
+        }
+        const ques2 = prompt('How old are you?')
+        if (ques2 === '25'){
+            alert('Well done + 1 ball')
+            num++;
+        } else {
+            alert('bad result');
+        }
+        const ques3 = prompt('where are you from?')
+        if (ques3 === 'Germany'){
+            alert('Thats right + 1 ball');
+            num++;
+        } else {
+            alert('bye');
+        }
+alert('У тебя '+num+' баллов');
+    }
+}else {
+    alert('Жаль что уходишь');
+}
 
 
 
