@@ -25,3 +25,69 @@ function multiplyNumeric(obj) {
 }
  console.log(obj);*/
 
+
+
+
+
+
+const whois = prompt('Кто пришел?', 'Админ');
+if (whois === 'Админ'){
+    const password = prompt('Пароль?');
+
+    if (password === 'Черный властелин'){
+        alert('Welcome');
+    } else if (password === null){
+        alert('Вход отменен');
+    } else {
+    alert('Тебе сюда нельзя, ты не достоин!');
+    }
+} else if (whois === null){
+    alert('Вход отменен');
+} else {
+    alert('Ты кто такой, давай до свидания!');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
